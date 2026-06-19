@@ -32,7 +32,6 @@ class PaletteReactiveTest {
 
   // --- Étape 1 : la fenêtre ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(1)
   void laFenetreEstVisible(FxRobot robot) {
@@ -41,7 +40,6 @@ class PaletteReactiveTest {
         .isTrue();
   }
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(2)
   void laSceneExiste(FxRobot robot) {
@@ -50,7 +48,6 @@ class PaletteReactiveTest {
         .isNotNull();
   }
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(3)
   void laRacineEstUnBorderPane(FxRobot robot) {
@@ -61,7 +58,6 @@ class PaletteReactiveTest {
 
   // --- Étape 2 : les trois BoutonCouleur ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(4)
   void lesTroisBoutonsExistent(FxRobot robot) {
@@ -76,7 +72,6 @@ class PaletteReactiveTest {
     assertThat(btnBleu.getText()).as("le bouton bleu doit afficher 'Bleu'").isEqualTo("Bleu");
   }
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(5)
   void lesBoutonsOntUneCouleur(FxRobot robot) {
@@ -94,7 +89,6 @@ class PaletteReactiveTest {
         .isEqualTo("blue");
   }
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(6)
   void leHBoxDesBoutonsEstEnHaut(FxRobot robot) {
@@ -106,7 +100,6 @@ class PaletteReactiveTest {
 
   // --- Étape 3 : la zone de couleur ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(7)
   void laZoneDeCouleurExiste(FxRobot robot) {
@@ -116,7 +109,6 @@ class PaletteReactiveTest {
 
   // --- Étape 4 : le label compteurs ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(8)
   void leLabelCompteursExiste(FxRobot robot) {
@@ -126,7 +118,6 @@ class PaletteReactiveTest {
 
   // --- Étape 5 : texte initial via Bindings.when() ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(9)
   void leTexteInitialAvantClic(FxRobot robot) {
@@ -138,7 +129,6 @@ class PaletteReactiveTest {
 
   // --- Étape 6 : cliquer change la couleur ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(10)
   void cliquerRougeMetLaZoneEnRouge(FxRobot robot) {
@@ -150,7 +140,6 @@ class PaletteReactiveTest {
         .contains("red");
   }
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(11)
   void cliquerVertMetLaZoneEnVert(FxRobot robot) {
@@ -164,7 +153,6 @@ class PaletteReactiveTest {
 
   // --- Étape 7 : le label se met à jour via binding ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(12)
   void cliquerIncrementeLeCompteur(FxRobot robot) {
@@ -177,7 +165,6 @@ class PaletteReactiveTest {
         .contains("Rouge: 2");
   }
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(13)
   void leTexteBasculeDeBienvenueAuxCompteurs(FxRobot robot) {
@@ -193,7 +180,6 @@ class PaletteReactiveTest {
 
   // --- Étape 8 : compteurs indépendants ---
 
-  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(14)
   void lesCompteursSontIndependants(FxRobot robot) {
@@ -211,7 +197,6 @@ class PaletteReactiveTest {
 
   // --- Étape 9 : vérifier que le binding fonctionne (pas de setText()) ---
 
-  //  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(15)
   void leLabelEstLieParBinding(FxRobot robot) {
